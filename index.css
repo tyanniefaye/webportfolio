@@ -107,6 +107,26 @@
     margin: 0;
 }
 
+/* Tools Section */
+.tools-section {
+    background: #1e293b;
+    padding: 60px 0;
+}
+
+.tool-box {
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(96, 165, 250, 0.3);
+}
+
+.tool-box .h5 {
+    margin: 0;
+}
+
 /* Contact Form */
 .form-control-custom {
     background-color: #334155 !important;
@@ -114,7 +134,10 @@
     color: #e2e8f0 !important;
     padding: 0.8rem;
     border-radius: 8px;
-    min-height: 150px;
+}
+
+.form-control-custom::placeholder {
+    color: #94a3b8;
 }
 
 /* Social Icons */
@@ -122,6 +145,11 @@
     font-size: 1.6rem;
     color: white;
     margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #60a5fa;
 }
 
 .social-icon:last-child {
